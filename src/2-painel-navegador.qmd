@@ -1,4 +1,4 @@
-# Painel do Navegador
+# Painel do Navegador {#sec-painelnavegador}
 
 
 O Browser é uma das principais maneiras de adicionar seus dados a projetos de forma rápida e fácil. Ele está disponível como:
@@ -47,29 +47,29 @@ As entradas no painel Navegador são organizadas hierarquicamente e há várias 
     
 6.  Em seguida, vêm vários tipos de contêiner/banco de dados e protocolos de serviço, dependendo da sua plataforma e bibliotecas subjacentes:
     
-    -   [![geopacote](https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png)](https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png) Pacote Geo
+    -   [![geopacote](https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png)](https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png) GeoPakage
         
-    -   [![espacialidade](https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png) Espaço Lite
+    -   [![espacialidade](https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png) SpatiaLite
         
     -   [![postgis](https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png) PostgreSQL
         
     -   [![trabalhar](https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png) SAP-HANA
         
-    -   [![MSSQL-](https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png) Servidor MS SQL
+    -   [![MSSQL-](https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png) MS SQL Server
         
-    -   [![oráculo](https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png) Oráculo
+    -   [![oráculo](https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png) Oracle
         
     -   [![wms](https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png) WMS/WMTS
         
-    -   [![Camada de Azulejo vetorial](https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png) Telhas de vetor
+    -   [![Camada de Azulejo vetorial](https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png) Vector Tiles
         
-    -   [![xyz](https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png) Azulejos XYZ
+    -   [![xyz](https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png) XYZ Tiles
         
     -   [![banheiros](https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png) WCS
         
-    -   [![wfs](https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png) Recursos da API WFS/OGC
+    -   [![wfs](https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png) WFS/OGC API-Features
         
-    -   [![afs](https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png) Servidor ArcGIS REST
+    -   [![afs](https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png) ArcGIS REST Server
         
 
 ---

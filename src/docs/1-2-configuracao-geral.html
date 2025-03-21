@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-2-configuracao-geral.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuração Geral</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-2-configuracao-geral.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuração Geral</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -113,13 +113,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Prefácio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">APRESENTAÇÃO GERAL DO QUANTUM GIS</span></span></a>
+  <a href="./obs_recomendcoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Observações</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -131,6 +131,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Apresentação geral do programa.</span></span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-1-instalacao.html" class="sidebar-item-text sidebar-link">
@@ -178,12 +184,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2-2-raster.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -208,9 +208,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-2-configuracao-geral.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuração Geral</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-2-configuracao-geral.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuração Geral</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuração Geral</span></h1>
+<h1 class="title"><span id="sec-configgeral" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Configuração Geral</span></span></h1>
 </div>
 
 
@@ -229,10 +229,19 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Algumas opções básicas para o QGIS podem ser selcionadas usando a caixa de diálogo Options. Selecione a opção menu <code>Configurações</code> &gt; <code>Opções</code>. Você pode modificar as opções de acordo com suas necessidades. Algumas das alterações talvez requeiram reiniciar o QGIS antes delas terem efeito.</p>
 <p>As abas onde você pode personalizar suas opções estão descritas abaixo.</p>
-<blockquote class="blockquote">
-<p><em><strong>Nota</strong></em></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><strong>Plugins podem embutir suas características dentro da caixa de diálogo das opções</strong></p>
-</blockquote>
+</div>
+</div>
 <p>Enquanto as configurações principais são apresentadas abaixo, note que essa lista pode ser estendida pelo <a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/plugins/plugins.html#plugins">installed plugins</a> Implementando suas próprias opções na caixa de diálogo de opções padrões. Isso evita que cada plugin tenha sua própria caixa de diálogo de configuração com itens extra de menu somente para eles…</p>
 <section id="configurações-gerais" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="configurações-gerais"><span class="header-section-number">3.1</span> Configurações Gerais</h2>
@@ -305,12 +314,21 @@ Figure&nbsp;3.3: Fonte de dados
 <li><p>Cache de linha da tabela de atributos <a href="https://docs.qgis.org/3.40/pt_BR/_images/selectnumber.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/selectnumber.png" class="img-fluid" alt="selectNumber"></a>. Essa linha de cache torna possível salvar as últimas linhas de N atributos carregados, assim trabalhar com a linha de atributos será mais rápido. O cache será deletado assim que fechar a tabela de atributos.</p></li>
 <li><p>Representação para valores NULL. Aqui, pode definir um valor para os campos de dados que contêm valores NULL.</p></li>
 </ul>
-<blockquote class="blockquote">
-<p>Dica</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><strong>Melhora a abertura da tabela de atributos de big data</strong></p>
 <p>Quando trabalhando com camadas com grandes quantidades de gravações, abrir a tabela de atributos pode ser vagaroso pois a caixa de diálogo chama todas as linhas na camada. Configurando Comportamento de tabela de atributos oara <strong>Mostre atributos visíveis no mapa</strong> fará o QGIS pedir somente os atributos do campo do mapa atual quando abrindo a tabela, permitindo um carregamento mais rápido.</p>
 <p>Note que a informação nessa instância da tabela de atributos será sempre amarrada com a extensão da tela com a cuja a qual foi aberta, o que significa que selecionando <strong>Mostrar todos os atributos</strong> dentro de tal tabela não mostrara novos atributos. Entretanto, você pode atualizar o conjunto de atributos mostrado mudando a extensão da tela e selecionando a opção <strong>Mostre Atributos Visíveis no Mapa</strong> na tabela de atributos.</p>
-</blockquote>
+</div>
+</div>
 </section>
 <section id="tela-e-legenda" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="tela-e-legenda"><span class="header-section-number">3.4</span> Tela e Legenda</h2>
@@ -354,10 +372,19 @@ Figure&nbsp;3.5: Cor da Seleção
 </ul>
 <p>Para uma melhor experiência, é recomendável habilitar a <a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_configuration.html#id52">|caixa de seleção|</a> Respeite o DPI da tela, especialmente ao usar monitores múltiplos ou diferentes e preparar mapas visualmente de alta qualidade. Desativando a <a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_configuration.html#id54">|caixa de seleção|</a> Respeitar o DPI da tela gerará uma saída que pode ser mais adequada para mapeamento destinado apenas para uso na tela, especialmente onde os tamanhos de fonte devem corresponder a outros aplicativos.</p></li>
 </ul>
-<blockquote class="blockquote">
-<p>Nota</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>A renderização em layouts não é afetada pela configuração Respeitar tela DPI; ele sempre respeita o DPI especificado para o dispositivo de saída de destino. Observe também que essa configuração usa o DPI da tela física conforme relatado pelo sistema operacional, que pode não ser preciso para todos os monitores.</p>
-</blockquote>
+</div>
+</div>
 </section>
 <section id="ferramenta-de-mapa" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="ferramenta-de-mapa"><span class="header-section-number">3.5</span> Ferramenta de Mapa</h2>
@@ -405,7 +432,7 @@ Figure&nbsp;3.9: Aderência
 </figcaption>
 </figure>
 </div>
-<p>Neste item podemos configurar o camportamento padrão da ferramenta de adrêcia que auxilia nos desenhos vetorieais. Por padrão vamos deixar a atração ao vértice e as unidades em pixel. ##COLOCAR LINK PARA A PÁGINA DE VETORIZAÇÃO##</p>
+<p>Neste item podemos configurar o camportamento padrão da ferramenta de adrêcia que auxilia nos desenhos vetorieais. Por padrão vamos deixar a atração ao vértice e as unidades em pixel.</p>
 <hr>
 <p>Documentação QGIS</p>
 <p><a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_configuration.html#options" target="_blank">5.1. Opções</a></p>

@@ -13,12 +13,13 @@ book:
   date: "2025-03-20"
   date-format: full
   repo-url: https://github.com/Isr4elEly/qgis
-  cover-image: cover.png
+  cover-image: logo_incra.jpeg
   chapters:
     - index.qmd
-    - intro.qmd
+    - obs_recomendcoes.qmd
     - part: "Apresentação Geral do QGIS"
       chapters:
+      - intro.qmd
       - 1-1-instalacao.qmd
       - 1-2-configuracao-geral.qmd
       - 1-3-propriedade-projeto.qmd
@@ -27,7 +28,6 @@ book:
       chapters:
       - 2-painel-navegador.qmd
       - 2-1-vetores.qmd
-      - 2-2-raster.qmd
 
 format:
   html:

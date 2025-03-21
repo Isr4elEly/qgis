@@ -1,4 +1,4 @@
-# APRESENTAÇÃO GERAL DO QUANTUM GIS
+# Apresentação geral do programa.
 
 O Quantum GIS (QGIS) apresenta uma interface bastante amigável e que pode ser completamente customizada de acordo com as suas necessidades. Abaixo é apresentada a tela inicial do programa em sua configuração padrão.
 

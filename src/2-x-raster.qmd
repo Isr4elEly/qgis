@@ -1,4 +1,4 @@
-# Carregando Raster ou Matrizes
+# Carregando Raster ou Matrizes {#sec-raster}
 
 O QuantumGis permite trabalhar com diversos formatos de imagem, dentre as mais
 comuns estão:

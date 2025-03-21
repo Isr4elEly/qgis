@@ -1,0 +1,13 @@
+# Observações {.unnumbered}
+
+
+A elaboração de peças técnicas cartográficas que subsidiam o Laudo Agronômico de Fiscalização e de Avaliação requer que os profissionais
+tenham conhecimento de normas e legislações que norteiam e definem padrões, limites e tipo de utilização dos produtos coletados e processados.
+
+O presente curso tem por objetivo treinar os técnicos do INCRA que já elaboram peças técnicas cartográficas em programas de desenho assistido por computador (CAD) na utilização de uma nova ferramenta de Sistema de Informações Geográficas (SIG), o QGIS.
+
+As imagens utilizadas neste curso foram previamente processadas sendo apenas exemplos para a utilização das ferramentas disponíveis.
+
+NÃO É OBJETIVO DESTE CURSO capacitar os profissionais em técnicas de sensoriamento remoto, precisão cartográfica e demais conhecimentos que sejam necessários a correta utilização destas técnicas.
+
+Ao Perito Federal Agrário e demais técnicos do INCRA que venham a ser treinados na utilização do QuantumGIS cabe total responsabilidade técnica sobre os produtos elaborados com o auxílio desta ferramenta, devendo ter conhecimento irrestrito de todas as técnicas, normas técnicas e legislações que regem e interferem nos materiais por eles elaborados.

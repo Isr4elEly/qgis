@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>8&nbsp; Carregando Raster ou Matrizes – Elaboração de mapas com o QGIS</title>
+<title>Observações – Elaboração de mapas com o QGIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./2-1-vetores.html" rel="prev">
+<link href="./intro.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-2-raster.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./obs_recomendcoes.html">Observações</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -112,13 +113,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Prefácio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">APRESENTAÇÃO GERAL DO QUANTUM GIS</span></span></a>
+  <a href="./obs_recomendcoes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Observações</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -130,6 +131,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Apresentação geral do programa.</span></span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-1-instalacao.html" class="sidebar-item-text sidebar-link">
@@ -177,12 +184,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2-2-raster.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -196,9 +197,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-page-right" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-2-raster.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></h1>
+<h1 class="title">Observações</h1>
 </div>
 
 
@@ -215,10 +216,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>O QuantumGis permite trabalhar com diversos formatos de imagem, dentre as mais comuns estão:</p>
-<p><strong>JPEG (Joint Pictures Expert Group)</strong>: é um formato de imagem que através de compressão elimina as informações de cores que o olho humano não é capaz de detectar e em função disso, apesar de haver perda de qualidade ela não é facilmente percebida, com isso os arquivos gerados são de tamanho relativamente pequeno.</p>
-<p><strong>TIFF (Tagged Image File Format)</strong>: foi desenvolvido em 1986 em uma tentativa de criar um padrão para imagens geradas por equipamentos digitais. O formato é capaz de armazenar imagens em preto ou branco, escalas de cinza e em paletas de cores com 24 ou com 32 bits.</p>
-<p><strong>GeoTIFF</strong>: é um padrão de metadados de Domínio público o qual permite embutir informações das Coordenadas geográficas em um arquivo TIFF. A informação adicional potencial inclui Projeções cartográficas, Sistema de coordenadas, Elipsóides, datums, e tudo mais necessário para estabelecer a referência espacial exata no arquivo.</p>
+<p>A elaboração de peças técnicas cartográficas que subsidiam o Laudo Agronômico de Fiscalização e de Avaliação requer que os profissionais tenham conhecimento de normas e legislações que norteiam e definem padrões, limites e tipo de utilização dos produtos coletados e processados.</p>
+<p>O presente curso tem por objetivo treinar os técnicos do INCRA que já elaboram peças técnicas cartográficas em programas de desenho assistido por computador (CAD) na utilização de uma nova ferramenta de Sistema de Informações Geográficas (SIG), o QGIS.</p>
+<p>As imagens utilizadas neste curso foram previamente processadas sendo apenas exemplos para a utilização das ferramentas disponíveis.</p>
+<p>NÃO É OBJETIVO DESTE CURSO capacitar os profissionais em técnicas de sensoriamento remoto, precisão cartográfica e demais conhecimentos que sejam necessários a correta utilização destas técnicas.</p>
+<p>Ao Perito Federal Agrário e demais técnicos do INCRA que venham a ser treinados na utilização do QuantumGIS cabe total responsabilidade técnica sobre os produtos elaborados com o auxílio desta ferramenta, devendo ter conhecimento irrestrito de todas as técnicas, normas técnicas e legislações que regem e interferem nos materiais por eles elaborados.</p>
 
 
 
@@ -645,11 +647,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
-      <a href="./2-1-vetores.html" class="pagination-link" aria-label="Carregando Vetores">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Prefácio">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prefácio</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./intro.html" class="pagination-link" aria-label="Apresentação geral do programa.">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Apresentação geral do programa.</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

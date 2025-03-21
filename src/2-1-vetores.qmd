@@ -27,6 +27,13 @@ Principais características:
 
 OBS: A forma como os arquivos vetoriais são produzidos nos programas CAD pode dificultar a abertura dos mesmos, por exemplo, hachuras, arquivos “atachados”, pontos e pedaços de linha que não fazem parte (“sujam”) do mapa devem ser evitados. Quanto mais o desenho se basear em estruturas como pontos, linhas e polígonos mais facilmente serão reconhecidos e menor a possibilidade de conflitos.
 
-Para visualizar tais arquivos no QGIS temos 3 opções:
+::: {.callout-important}
+Podemos carregar arquivos no QGIS de várias formas, mas, neste cursos usaremos preferencialmente o `Painel do Navegador` (@sec-painelnavegador) para acessar as pastas e arquivos.
+:::
 
-I. Utilizar a Barra de Menu Camada > Adicionar camada vetorial;
+
+
+---
+Documentação QGIS
+
+[2.2. Lição: Adicionando suas primeiras camadas](https://docs.qgis.org/3.40/pt_BR/docs/training_manual/basic_map/preparation.html#lesson-adding-your-first-layers){target="_blank"}

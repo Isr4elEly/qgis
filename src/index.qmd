@@ -1,5 +1,7 @@
-# Preface {.unnumbered}
+# Prefácio {.unnumbered}
 
-This is a Quarto book.
+ESta apóstila tem a finalidade de referenciar a apresentação do software QGIS aos servidores do INCRA Bahia na elaboração de peças técnicas dentro dos trabalhos realizados pelo corpo técnico da instituição em divérsas áreas de conhecimento. O material foi baseado no [Manual do QGIS](https://docs.qgis.org/3.40/pt_BR/docs/training_manual/index.html){target="_blank"} e no material do primeiro trenamento realizado pela instituição [Elaboração de Mapas Temáticos no Quantum GIS](https://drive.google.com/file/d/1p4lKiLZ-yXUQVHwRbk8wuplxpGbXw9P7/view?usp=sharing){target="_blank"}.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+A sequância da apresentação buscou lincar operações básicas para o uso inicial do programa na elaboração e análise de produtos cartográficos dentro dos temas abordados pelo INCRA baseando-se no material acima citado e com links para o [Manual do QGIS](https://docs.qgis.org/3.40/pt_BR/docs/training_manual/index.html){target="_blank"} em cada assunto abordado para que o interessado possa obter informações avançadas ou mais detelhadas.
+
+Os arquivos utilizados nos exercícios podem ser baixados no link: [arquivos](https://drive.google.com/drive/folders/1EdSj6JGCpa05rYOxRFfI4Ka1jt0M59qr?usp=sharing){target="_blank"}.

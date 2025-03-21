@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./2-2-raster.html" rel="next">
 <link href="./2-painel-navegador.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -113,13 +112,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Prefácio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">APRESENTAÇÃO GERAL DO QUANTUM GIS</span></span></a>
+  <a href="./obs_recomendcoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Observações</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -131,6 +130,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Apresentação geral do programa.</span></span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-1-instalacao.html" class="sidebar-item-text sidebar-link">
@@ -176,12 +181,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./2-1-vetores.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2-2-raster.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></span></a>
   </div>
 </li>
       </ul>
@@ -234,8 +233,22 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Keyhole Markup Language [KML] (.kml)</strong>: Formato produzido inicialmente para ser visualizado no software Google Earth, diversos sites atualmente distribuem informações neste formato;</p>
 <p><strong>AutoCAD DXF (.dxf)</strong>: Formato do principal software de Desenho Assistido por Computador (CAD) utilizado em todo o mundo;</p>
 <p>OBS: A forma como os arquivos vetoriais são produzidos nos programas CAD pode dificultar a abertura dos mesmos, por exemplo, hachuras, arquivos “atachados”, pontos e pedaços de linha que não fazem parte (“sujam”) do mapa devem ser evitados. Quanto mais o desenho se basear em estruturas como pontos, linhas e polígonos mais facilmente serão reconhecidos e menor a possibilidade de conflitos.</p>
-<p>Para visualizar tais arquivos no QGIS temos 3 opções:</p>
-<p>I. Utilizar a Barra de Menu Camada &gt; Adicionar camada vetorial;</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Podemos carregar arquivos no QGIS de várias formas, mas, neste cursos usaremos preferencialmente o <code>Painel do Navegador</code> (<a href="2-painel-navegador.html" class="quarto-xref"><span>Chapter 6</span></a>) para acessar as pastas e arquivos.</p>
+</div>
+</div>
+<hr>
+<p>Documentação QGIS</p>
+<p><a href="https://docs.qgis.org/3.40/pt_BR/docs/training_manual/basic_map/preparation.html#lesson-adding-your-first-layers" target="_blank">2.2. Lição: Adicionando suas primeiras camadas</a></p>
 
 
 
@@ -667,9 +680,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./2-2-raster.html" class="pagination-link" aria-label="Carregando Raster ou Matrizes">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

@@ -1,4 +1,4 @@
-# Sistema de Referência de Coordenadas - SRC.
+# Sistema de Referência de Coordenadas - SRC. {#sec-src}
 
 
 ![Sistema de Referência de Coordenadas](img/SRC.png)

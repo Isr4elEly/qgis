@@ -113,13 +113,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Prefácio</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">APRESENTAÇÃO GERAL DO QUANTUM GIS</span></span></a>
+  <a href="./obs_recomendcoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Observações</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -131,6 +131,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Apresentação geral do programa.</span></span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-1-instalacao.html" class="sidebar-item-text sidebar-link">
@@ -178,12 +184,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./2-2-raster.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -205,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-painel-navegador.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></h1>
+<h1 class="title"><span id="sec-painelnavegador" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></span></h1>
 </div>
 
 
@@ -262,18 +262,18 @@ Figure&nbsp;6.1: Painel do Navegador
 <li><p>Unidades locais ou de rede conectadas</p></li>
 <li><p>Em seguida, vêm vários tipos de contêiner/banco de dados e protocolos de serviço, dependendo da sua plataforma e bibliotecas subjacentes:</p>
 <ul>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png" class="img-fluid" alt="geopacote"></a> Pacote Geo</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png" class="img-fluid" alt="espacialidade"></a> Espaço Lite</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png" class="img-fluid" alt="geopacote"></a> GeoPakage</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png" class="img-fluid" alt="espacialidade"></a> SpatiaLite</p></li>
 <li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png" class="img-fluid" alt="postgis"></a> PostgreSQL</p></li>
 <li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png" class="img-fluid" alt="trabalhar"></a> SAP-HANA</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png" class="img-fluid" alt="MSSQL-"></a> Servidor MS SQL</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png" class="img-fluid" alt="oráculo"></a> Oráculo</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png" class="img-fluid" alt="MSSQL-"></a> MS SQL Server</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png" class="img-fluid" alt="oráculo"></a> Oracle</p></li>
 <li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png" class="img-fluid" alt="wms"></a> WMS/WMTS</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png" class="img-fluid" alt="Camada de Azulejo vetorial"></a> Telhas de vetor</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png" class="img-fluid" alt="xyz"></a> Azulejos XYZ</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png" class="img-fluid" alt="Camada de Azulejo vetorial"></a> Vector Tiles</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png" class="img-fluid" alt="xyz"></a> XYZ Tiles</p></li>
 <li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png" class="img-fluid" alt="banheiros"></a> WCS</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png" class="img-fluid" alt="wfs"></a> Recursos da API WFS/OGC</p></li>
-<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png" class="img-fluid" alt="afs"></a> Servidor ArcGIS REST</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png" class="img-fluid" alt="wfs"></a> WFS/OGC API-Features</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png" class="img-fluid" alt="afs"></a> ArcGIS REST Server</p></li>
 </ul></li>
 </ol>
 <hr>
