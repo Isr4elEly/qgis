@@ -1,4 +1,4 @@
-# CONFIGURANDO AS PROPRIEDADES DO PROJETO.
+# Configuração do Projeto
 
 Para acessar as configurações do projeto acesse o menu `Projeto` > `Propriedades` ou `Crtl + Shift + P`.
 

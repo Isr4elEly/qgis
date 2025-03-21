@@ -1,4 +1,4 @@
-#  CONFIGURANDO OPÇÕES
+#  Configuração Geral
 
 Algumas opções básicas para o QGIS podem ser selcionadas usando a caixa de diálogo Options. Selecione a opção menu `Configurações` > `Opções`. Você pode modificar as opções de acordo com suas necessidades. Algumas das alterações talvez requeiram reiniciar o QGIS antes delas terem efeito.
 

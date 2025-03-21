@@ -1,0 +1,78 @@
+# Painel do Navegador
+
+
+O Browser é uma das principais maneiras de adicionar seus dados a projetos de forma rápida e fácil. Ele está disponível como:
+
+-   uma aba do Gerenciador de Fonte de Dados , habilitada pressionando o botão <sup><span>Abrir Gerenciador de Fonte de Dados</span></sup> ( );[![Gerenciador de Fonte de Dados](https://docs.qgis.org/3.40/pt_BR/_images/mActionDataSourceManager.png)](https://docs.qgis.org/3.40/pt_BR/_images/mActionDataSourceManager.png) Ctrl+L
+    
+-   como um painel QGIS você pode abrir no menu (ou ) ou pressionando .[![onde](https://docs.qgis.org/3.40/pt_BR/_images/kde.png)](https://docs.qgis.org/3.40/pt_BR/_images/kde.png) Ctrl+2
+    
+
+Em ambos os casos, o Navegador ajuda você a navegar no seu sistema de arquivos e gerenciar geodados, independentemente do tipo de camada (raster, vetorial, tabela) ou do formato da fonte de dados (arquivos simples ou compactados, bancos de dados, serviços web).
+
+![Painel do Navegador](img/navegador.png){#fig-navegador}
+
+## Funcionalidades
+
+Na parte superior do painel Navegador, você encontra alguns botões que ajudam a:
+
+-   [![adicionar camada](https://docs.qgis.org/3.40/pt_BR/_images/mActionAddLayer.png)](https://docs.qgis.org/3.40/pt_BR/_images/mActionAddLayer.png) <sup><span><span>Adicionar camadas selecionadas</span></span></sup> : você também pode adicionar dados à tela do mapa selecionando **Adicionar camada(s) selecionada(s)** no menu de contexto da camada;
+    
+-   [![atualizar](https://docs.qgis.org/3.40/pt_BR/_images/mActionRefresh.png)](https://docs.qgis.org/3.40/pt_BR/_images/mActionRefresh.png) <sup><span><span>Atualize</span></span></sup> a árvore do navegador;
+    
+-   [![filtroMapa](https://docs.qgis.org/3.40/pt_BR/_images/mActionFilterMap.png)](https://docs.qgis.org/3.40/pt_BR/_images/mActionFilterMap.png) <sup><span><span>Filtrar navegador</span></span></sup> para pesquisar dados específicos. Insira uma palavra de pesquisa ou curinga e o navegador filtrará a árvore para mostrar apenas caminhos para tabelas de BD, nomes de arquivo ou pastas correspondentes – outros dados ou pastas não serão exibidos. Veja o exemplo do Painel do navegador na (@fig-navegador) (https://docs.qgis.org/3.40/pt_BR/docs/user_manual/managing_data_source/opening_data.html#figure-browser-panels) . A comparação pode ser sensível a maiúsculas e minúsculas ou não. Também pode ser definida como:
+    
+    -   Normal: mostra itens que contêm o texto de pesquisa
+        
+    -   Curinga(s) : ajuste fino da pesquisa usando os caracteres `?`e/ou `*` para especificar a posição do texto da pesquisa
+        
+    -   Expressão regular
+        
+-   [![colapsoÁrvore](https://docs.qgis.org/3.40/pt_BR/_images/mActionCollapseTree.png)](https://docs.qgis.org/3.40/pt_BR/_images/mActionCollapseTree.png) <sup><span><span>Recolher toda</span></span></sup> a árvore inteira;
+    
+-   [![metadados](https://docs.qgis.org/3.40/pt_BR/_images/metadata.png)](https://docs.qgis.org/3.40/pt_BR/_images/metadata.png) <sup><span><span>Ativar/desativar widget de propriedades</span></span></sup> : quando ativado, um novo widget é adicionado na parte inferior do painel, mostrando, se aplicável, metadados para o item selecionado.
+    
+
+As entradas no painel Navegador são organizadas hierarquicamente e há várias entradas de nível superior:
+
+1.  Favoritos onde você pode colocar atalhos para locais usados com frequência
+    
+2.  Marcadores espaciais onde você pode armazenar extensões de mapa usadas com frequência (consulte [Marcadores de extensões no mapa](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#sec-bookmarks) )
+    
+3.  Project Home : para acesso rápido à pasta na qual (a maioria dos) dados relacionados ao seu projeto estão armazenados. O valor padrão é o diretório onde seu arquivo de projeto reside.
+    
+4.  Diretório inicial no sistema de arquivos e diretório raiz do sistema de arquivos.
+    
+5.  Unidades locais ou de rede conectadas
+    
+6.  Em seguida, vêm vários tipos de contêiner/banco de dados e protocolos de serviço, dependendo da sua plataforma e bibliotecas subjacentes:
+    
+    -   [![geopacote](https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png)](https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png) Pacote Geo
+        
+    -   [![espacialidade](https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png) Espaço Lite
+        
+    -   [![postgis](https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png) PostgreSQL
+        
+    -   [![trabalhar](https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png) SAP-HANA
+        
+    -   [![MSSQL-](https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png) Servidor MS SQL
+        
+    -   [![oráculo](https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png) Oráculo
+        
+    -   [![wms](https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png) WMS/WMTS
+        
+    -   [![Camada de Azulejo vetorial](https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png) Telhas de vetor
+        
+    -   [![xyz](https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png) Azulejos XYZ
+        
+    -   [![banheiros](https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png) WCS
+        
+    -   [![wfs](https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png) Recursos da API WFS/OGC
+        
+    -   [![afs](https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png)](https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png) Servidor ArcGIS REST
+        
+
+---
+Documentação QGIS
+
+[11.1.1. O Painel do Navegador](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/managing_data_source/opening_data.html#the-browser-panel){target="_blank"}

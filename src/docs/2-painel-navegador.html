@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>8&nbsp; Carregando Raster ou Matrizes – Elaboração de mapas com o QGIS</title>
+<title>6&nbsp; Painel do Navegador – Elaboração de mapas com o QGIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./2-1-vetores.html" rel="prev">
+<link href="./2-1-vetores.html" rel="next">
+<link href="./1-4-sistema-coordenadas.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-2-raster.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-painel-navegador.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-painel-navegador.html" class="sidebar-item-text sidebar-link">
+  <a href="./2-painel-navegador.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></span></a>
   </div>
 </li>
@@ -179,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2-2-raster.html" class="sidebar-item-text sidebar-link active">
+  <a href="./2-2-raster.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></span></a>
   </div>
 </li>
@@ -190,20 +191,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#funcionalidades" id="toc-funcionalidades" class="nav-link active" data-scroll-target="#funcionalidades"><span class="header-section-number">6.1</span> Funcionalidades</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-2-raster.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-painel-navegador.html">Carregamento e visualização de dados</a></li><li class="breadcrumb-item"><a href="./2-painel-navegador.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Carregando Raster ou Matrizes</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Painel do Navegador</span></h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -215,12 +222,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>O QuantumGis permite trabalhar com diversos formatos de imagem, dentre as mais comuns estão:</p>
-<p><strong>JPEG (Joint Pictures Expert Group)</strong>: é um formato de imagem que através de compressão elimina as informações de cores que o olho humano não é capaz de detectar e em função disso, apesar de haver perda de qualidade ela não é facilmente percebida, com isso os arquivos gerados são de tamanho relativamente pequeno.</p>
-<p><strong>TIFF (Tagged Image File Format)</strong>: foi desenvolvido em 1986 em uma tentativa de criar um padrão para imagens geradas por equipamentos digitais. O formato é capaz de armazenar imagens em preto ou branco, escalas de cinza e em paletas de cores com 24 ou com 32 bits.</p>
-<p><strong>GeoTIFF</strong>: é um padrão de metadados de Domínio público o qual permite embutir informações das Coordenadas geográficas em um arquivo TIFF. A informação adicional potencial inclui Projeções cartográficas, Sistema de coordenadas, Elipsóides, datums, e tudo mais necessário para estabelecer a referência espacial exata no arquivo.</p>
+<p>O Browser é uma das principais maneiras de adicionar seus dados a projetos de forma rápida e fácil. Ele está disponível como:</p>
+<ul>
+<li><p>uma aba do Gerenciador de Fonte de Dados , habilitada pressionando o botão <sup><span>Abrir Gerenciador de Fonte de Dados</span></sup> ( );<a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionDataSourceManager.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionDataSourceManager.png" class="img-fluid" alt="Gerenciador de Fonte de Dados"></a> Ctrl+L</p></li>
+<li><p>como um painel QGIS você pode abrir no menu (ou ) ou pressionando .<a href="https://docs.qgis.org/3.40/pt_BR/_images/kde.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/kde.png" class="img-fluid" alt="onde"></a> Ctrl+2</p></li>
+</ul>
+<p>Em ambos os casos, o Navegador ajuda você a navegar no seu sistema de arquivos e gerenciar geodados, independentemente do tipo de camada (raster, vetorial, tabela) ou do formato da fonte de dados (arquivos simples ou compactados, bancos de dados, serviços web).</p>
+<div id="fig-navegador" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-navegador-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/navegador.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-navegador-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: Painel do Navegador
+</figcaption>
+</figure>
+</div>
+<section id="funcionalidades" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="funcionalidades"><span class="header-section-number">6.1</span> Funcionalidades</h2>
+<p>Na parte superior do painel Navegador, você encontra alguns botões que ajudam a:</p>
+<ul>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionAddLayer.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionAddLayer.png" class="img-fluid" alt="adicionar camada"></a> <sup><span><span>Adicionar camadas selecionadas</span></span></sup> : você também pode adicionar dados à tela do mapa selecionando <strong>Adicionar camada(s) selecionada(s)</strong> no menu de contexto da camada;</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionRefresh.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionRefresh.png" class="img-fluid" alt="atualizar"></a> <sup><span><span>Atualize</span></span></sup> a árvore do navegador;</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionFilterMap.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionFilterMap.png" class="img-fluid" alt="filtroMapa"></a> <sup><span><span>Filtrar navegador</span></span></sup> para pesquisar dados específicos. Insira uma palavra de pesquisa ou curinga e o navegador filtrará a árvore para mostrar apenas caminhos para tabelas de BD, nomes de arquivo ou pastas correspondentes – outros dados ou pastas não serão exibidos. Veja o exemplo do Painel do navegador na (<a href="#fig-navegador" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>) (https://docs.qgis.org/3.40/pt_BR/docs/user_manual/managing_data_source/opening_data.html#figure-browser-panels) . A comparação pode ser sensível a maiúsculas e minúsculas ou não. Também pode ser definida como:</p>
+<ul>
+<li><p>Normal: mostra itens que contêm o texto de pesquisa</p></li>
+<li><p>Curinga(s) : ajuste fino da pesquisa usando os caracteres <code>?</code>e/ou <code>*</code> para especificar a posição do texto da pesquisa</p></li>
+<li><p>Expressão regular</p></li>
+</ul></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionCollapseTree.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionCollapseTree.png" class="img-fluid" alt="colapsoÁrvore"></a> <sup><span><span>Recolher toda</span></span></sup> a árvore inteira;</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/metadata.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/metadata.png" class="img-fluid" alt="metadados"></a> <sup><span><span>Ativar/desativar widget de propriedades</span></span></sup> : quando ativado, um novo widget é adicionado na parte inferior do painel, mostrando, se aplicável, metadados para o item selecionado.</p></li>
+</ul>
+<p>As entradas no painel Navegador são organizadas hierarquicamente e há várias entradas de nível superior:</p>
+<ol type="1">
+<li><p>Favoritos onde você pode colocar atalhos para locais usados com frequência</p></li>
+<li><p>Marcadores espaciais onde você pode armazenar extensões de mapa usadas com frequência (consulte <a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#sec-bookmarks">Marcadores de extensões no mapa</a> )</p></li>
+<li><p>Project Home : para acesso rápido à pasta na qual (a maioria dos) dados relacionados ao seu projeto estão armazenados. O valor padrão é o diretório onde seu arquivo de projeto reside.</p></li>
+<li><p>Diretório inicial no sistema de arquivos e diretório raiz do sistema de arquivos.</p></li>
+<li><p>Unidades locais ou de rede conectadas</p></li>
+<li><p>Em seguida, vêm vários tipos de contêiner/banco de dados e protocolos de serviço, dependendo da sua plataforma e bibliotecas subjacentes:</p>
+<ul>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mGeoPackage.png" class="img-fluid" alt="geopacote"></a> Pacote Geo</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconSpatialite.png" class="img-fluid" alt="espacialidade"></a> Espaço Lite</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconPostgis.png" class="img-fluid" alt="postgis"></a> PostgreSQL</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconHana.png" class="img-fluid" alt="trabalhar"></a> SAP-HANA</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconMssql.png" class="img-fluid" alt="MSSQL-"></a> Servidor MS SQL</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconOracle.png" class="img-fluid" alt="oráculo"></a> Oráculo</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWms.png" class="img-fluid" alt="wms"></a> WMS/WMTS</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconVectorTileLayer.png" class="img-fluid" alt="Camada de Azulejo vetorial"></a> Telhas de vetor</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconXyz.png" class="img-fluid" alt="xyz"></a> Azulejos XYZ</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWcs.png" class="img-fluid" alt="banheiros"></a> WCS</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconWfs.png" class="img-fluid" alt="wfs"></a> Recursos da API WFS/OGC</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mIconAfs.png" class="img-fluid" alt="afs"></a> Servidor ArcGIS REST</p></li>
+</ul></li>
+</ol>
+<hr>
+<p>Documentação QGIS</p>
+<p><a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/managing_data_source/opening_data.html#the-browser-panel" target="_blank">11.1.1. O Painel do Navegador</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -643,13 +704,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./2-1-vetores.html" class="pagination-link" aria-label="Carregando Vetores">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span>
+      <a href="./1-4-sistema-coordenadas.html" class="pagination-link" aria-label="Sistema de Referência de Coordenadas - SRC.">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sistema de Referência de Coordenadas - SRC.</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./2-1-vetores.html" class="pagination-link" aria-label="Carregando Vetores">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Carregando Vetores</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

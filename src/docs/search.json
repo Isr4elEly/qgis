@@ -22,144 +22,166 @@
   {
     "objectID": "1-1-instalacao.html",
     "href": "1-1-instalacao.html",
-    "title": "2  BAIXANDO E INSTALANDO",
+    "title": "2  Instalação",
     "section": "",
     "text": "o QGIS possui insteface com divérsos sistema operacionais podendo ser baixado do site qgis.org/.\nAs compilações de longo prazo atualmente fornecem 3.40.4 ‘Bratislava’. As compilações de Long Term Release (LTR) são destinadas àqueles que valorizam a estabilidade em vez de ter os recursos mais recentes. Se não tiver certeza de qual versão é melhor para você, baixe a LTR.\nInstalação no Windows\n\n\n\nwindows\n\n\nBaixe o arquivo da versão LTS e execute no seu computados para efetivar a instalação.",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>BAIXANDO E INSTALANDO</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Instalação</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html",
     "href": "1-2-configuracao-geral.html",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "",
     "text": "3.1 Configurações Gerais",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html#configurações-gerais",
     "href": "1-2-configuracao-geral.html#configurações-gerais",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "",
     "text": "Figure 3.1: Opções Gerais",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html#transformação-src",
     "href": "1-2-configuracao-geral.html#transformação-src",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "3.2 Transformação SRC",
     "text": "3.2 Transformação SRC\nNa aba  Manuseio CRS você pode configurar qual SRC será usado para um novo projeto ou camada.\n\n\n\n\n\n\nFigure 3.2: Transformação SRC\n\n\n\nSRC para projetos\nExiste uma opção para definir automaticamente o SRC do novo projeto:\n\nUsa SRC para a primeira camada adicionada: o CRS do projeto será configurado para o SRC da primeira lista carregada nele.\nUsa um SRC padrão: um SRC pré-selecionado é aplicado por padrão para qualquer novo projeto e deixado imutável quando adicionando camadas para o projeto.\n\nA escolha será salva para uso em sessão subsequentes do QGIS. O sistema de referência de coordenada do projeto pode ser sobrescrito por meio da aba\nSRC para camadas\nDefault SRC for layers: selecione um SRC padrão para usar quando você cria uma camada.\nVocê também pode definir a ação que desejar quando uma nova camada é criada, ou quando a camada sem um SRC é carregada\n\n Deixe como SRC desconhecido (Não tome ação)\n Prompt para SRC\n Usar SRC do projeto\n Usar camada SRC padrão",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html#fonte-de-dados",
     "href": "1-2-configuracao-geral.html#fonte-de-dados",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "3.3 Fonte de Dados",
     "text": "3.3 Fonte de Dados\n\n\n\n\n\n\nFigure 3.3: Fonte de dados\n\n\n\nAtributos dos elementos e tabela\n\n Abrir tabela de atributos como uma janela encaixada, a tabela fica ancorada na parte inferior da janela de mapas.\n Dimensionar automaticamente todas as colunas por padrão ao abrir a tabela de atributos.\nCopiar recursos como: define o formato a ser usado para dados ao colar recursos em outros aplicativos.\n\nTexto simples, sem geometria: atributos são copiados como texto, mas a geometria é ignorada\nTexto simples, geometria WKT: atributos são copiados como texto e a geometria é retornada em WKT\nTexto simples, geometria WKB: atributos são copiados como texto e a geometria é retornada em WKB (formato hexadecimal)\nGeoJSON: atributos e geometria são formatados como dados GeoJSON\n\nAtributo tabela de comportamento : configura o filtro na abertura da tabela de atributos. Há três possibilidades: ‘Mostrar todos os atributos’, ‘Show atributos selecionados’ e ‘Mostrar atributos visíveis no mapa’.\nVisualização padrão: Definir o modo de visualização da tabela de atributo a cada abertura. Pode ser ‘Lembrar ultima visualização’, ‘Ver tabela’ ou ‘Visualização de formulário’.\nCache de linha da tabela de atributos . Essa linha de cache torna possível salvar as últimas linhas de N atributos carregados, assim trabalhar com a linha de atributos será mais rápido. O cache será deletado assim que fechar a tabela de atributos.\nRepresentação para valores NULL. Aqui, pode definir um valor para os campos de dados que contêm valores NULL.\n\n\nDica\nMelhora a abertura da tabela de atributos de big data\nQuando trabalhando com camadas com grandes quantidades de gravações, abrir a tabela de atributos pode ser vagaroso pois a caixa de diálogo chama todas as linhas na camada. Configurando Comportamento de tabela de atributos oara Mostre atributos visíveis no mapa fará o QGIS pedir somente os atributos do campo do mapa atual quando abrindo a tabela, permitindo um carregamento mais rápido.\nNote que a informação nessa instância da tabela de atributos será sempre amarrada com a extensão da tela com a cuja a qual foi aberta, o que significa que selecionando Mostrar todos os atributos dentro de tal tabela não mostrara novos atributos. Entretanto, você pode atualizar o conjunto de atributos mostrado mudando a extensão da tela e selecionando a opção Mostre Atributos Visíveis no Mapa na tabela de atributos.",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html#tela-e-legenda",
     "href": "1-2-configuracao-geral.html#tela-e-legenda",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "3.4 Tela e Legenda",
     "text": "3.4 Tela e Legenda\n\n\n\n\n\n\nFigure 3.4: tela-legenda\n\n\n\nEssas propriedades permitem que você defina:\n\nO Aparência padrão de mapa (sobescrita pelas propriedades do projeto): o Seleção de cor e Cor de fundo.\n\nNa opção cor da seleção, podemos clicar sobre o ícone da cor para abrir uma caixa de configuração. Podemos configurarar opacidade para 50%. Issonfará com que os polígonos quando selecionados na janela do mapa apresentem uma transparência possibilitando a visualização de camadas abaixo, isso é especiamente util quando estamos vetorizando imagens.\n\n\n\n\n\n\nFigure 3.5: Cor da Seleção\n\n\n\n\nLegenda de camada interação:\n\nDuplo-clique na legenda: determina a ação do duplo-clique do mouse no nome da camada carregada na janela de camadas\nBehavior used when adding new layers (não traduzido): determina o local de carregamento da pŕoxima camada:\n\nAcima da camada selecionada no momento\nSempre no topo da árvore de camadas\nÍndice ideal dentro do grupo de árvores de camadas atual: diferentemente das outras opções que classificam as novas camadas entre si e as colocam como uma pilha no local desejado, esta opção estende a lógica de classificação para toda a árvore de camadas (ou o grupo ativo) e insere novas camadas de forma “ótima”, garantindo que as camadas de pontos fiquem sobre as camadas de pontos, seguidas por camadas de linhas sobre as linhas, seguidas por camadas de polígonos, etc.\n\n Mostrar contagem de recursos para camadas recém-adicionados: exibe no painel Camadas o número de recursos ao lado do nome da camada. A contagem de recurso de classes, se houver, também é exibida. Você pode clicar com o botão direito do mouse em uma camada para ativar/desativar sua contagem de recursos.\n Exibir nomes de atributos de classificação no painel Camadas, por exemplo, ao aplicar um renderizador categorizado ou baseado em regras (veja Propriedades da simbologia para mais informações).\n\nPara uma melhor experiência, é recomendável habilitar a |caixa de seleção| Respeite o DPI da tela, especialmente ao usar monitores múltiplos ou diferentes e preparar mapas visualmente de alta qualidade. Desativando a |caixa de seleção| Respeitar o DPI da tela gerará uma saída que pode ser mais adequada para mapeamento destinado apenas para uso na tela, especialmente onde os tamanhos de fonte devem corresponder a outros aplicativos.\n\n\nNota\nA renderização em layouts não é afetada pela configuração Respeitar tela DPI; ele sempre respeita o DPI especificado para o dispositivo de saída de destino. Observe também que essa configuração usa o DPI da tela física conforme relatado pelo sistema operacional, que pode não ser preciso para todos os monitores.",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html#ferramenta-de-mapa",
     "href": "1-2-configuracao-geral.html#ferramenta-de-mapa",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "3.5 Ferramenta de Mapa",
     "text": "3.5 Ferramenta de Mapa\n\n\n\n\n\n\nFigure 3.6: Ferramenta de Mapa\n\n\n\n\n\n\n\n\n\nFigure 3.7: Ferramentas de Medidas\n\n\n\nNeste item podemos configurar as unidades de medidas utilizadas nos cálculos das camadas vetoriais.",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-2-configuracao-geral.html#vetorização",
     "href": "1-2-configuracao-geral.html#vetorização",
-    "title": "3  CONFIGURANDO OPÇÕES",
+    "title": "3  Configuração Geral",
     "section": "3.6 Vetorização",
     "text": "3.6 Vetorização\n\n\n\n\n\n\nFigure 3.8: Vetorização\n\n\n\n\n\n\n\n\n\nFigure 3.9: Aderência\n\n\n\nNeste item podemos configurar o camportamento padrão da ferramenta de adrêcia que auxilia nos desenhos vetorieais. Por padrão vamos deixar a atração ao vértice e as unidades em pixel. ##COLOCAR LINK PARA A PÁGINA DE VETORIZAÇÃO##\n\nDocumentação QGIS\n5.1. Opções",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CONFIGURANDO OPÇÕES</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Configuração Geral</span>"
     ]
   },
   {
     "objectID": "1-3-propriedade-projeto.html",
     "href": "1-3-propriedade-projeto.html",
-    "title": "4  CONFIGURANDO AS PROPRIEDADES DO PROJETO.",
+    "title": "4  Configuração do Projeto",
     "section": "",
     "text": "4.1 Geral\nNa aba  Geral, a aba Configurações Gerais permite a você:\nCalcular áreas e distâncias é uma necessidade comum em GIS. No entanto, esses valores estão realmente vinculados às configurações de projeção subjacentes. O quadro Measurements permite que você controle esses parâmetros. Você pode, de fato, escolher:\nDocumentação QGIS\n5.3. Propriedades do Projeto",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>CONFIGURANDO AS PROPRIEDADES DO PROJETO.</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Configuração do Projeto</span>"
     ]
   },
   {
     "objectID": "1-3-propriedade-projeto.html#geral",
     "href": "1-3-propriedade-projeto.html#geral",
-    "title": "4  CONFIGURANDO AS PROPRIEDADES DO PROJETO.",
+    "title": "4  Configuração do Projeto",
     "section": "",
     "text": "veja a localização do arquivo do projeto\ndefina a pasta para a home do projeto (disponível no item Home do projeto do painel Navegador). O caminho pode ser relativo à pasta do arquivo do projeto (digite-o) ou absoluto. A home do projeto pode ser usada para armazenar dados e outros conteúdos que sejam úteis para o projeto. Conveniente quando os arquivos do conjunto de dados e do projeto não são armazenados no mesmo lugar. Se não for preenchido, a home do projeto assume como padrão a pasta do arquivo do projeto.\ndê um título ao projeto ao lado do caminho do arquivo do projeto\nescolha a cor a ser usada para as feições quando elas são selecionadas\nescolha a cor de fundo: a cor a ser usada na tela do mapa\ndefina se o caminho para camadas no projeto deve ser salvo como absoluto (completo) ou como relativo ao local do arquivo do projeto. Você pode preferir caminho relativo quando camadas e arquivos do projeto podem ser movidos ou compartilhados ou se o projeto for acessado de computadores em plataformas diferentes.\nescolha evitar artefatos quando o projeto for renderizado como blocos de mapa. Observe que marcar esta opção pode levar à degradação do desempenho.\nLembre-se das janelas e docas de tabelas de atributos entre sessões: Se marcadas para um projeto, todas as tabelas de atributos abertas serão salvas no projeto e imediatamente restauradas ao carregar esse projeto. Isso pode melhorar os fluxos de trabalho quando você construiu um projeto com um conjunto específico de configurações de tabelas de atributos para seus requisitos, e reconfigurar essas tabelas de atributos é um incômodo.\n\n\n\no Elipsóide, no qual os cálculos de distância, área e ângulo são inteiramente baseados; pode ser:\n\nNenhum/Planimétrico: os valores retornados são neste caso medidas cartesianas. Esta opção pode ser definida como padrão para novos projetos a partir do   menu\num Personalizado: você precisará definir valores dos eixos semi-maior e semi-menor.\nou um existente de uma lista predefinida (Clarke 1866, Clarke 1880 IGN, New International 1967, WGS 84…).\n\nas Unidades para medidas de distância para comprimento e perímetro, e as Unidades para medidas de área. Essas configurações que são padronizadas para seus correspondentes global options sobrescrevê-los no projeto atual. Eles são usados ​​em:\n\nBarra de atualização de campo da tabela de atributos\nCálculos da calculadora de campo\nFerramenta de Identificação valores derivados de comprimento, perímetro e área\ndiálogo de medida\ndecoração de barra de escala",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>CONFIGURANDO AS PROPRIEDADES DO PROJETO.</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Configuração do Projeto</span>"
     ]
   },
   {
     "objectID": "1-4-sistema-coordenadas.html",
     "href": "1-4-sistema-coordenadas.html",
-    "title": "5  SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.",
+    "title": "5  Sistema de Referência de Coordenadas - SRC.",
     "section": "",
     "text": "Sistema de Referência de Coordenadas\n\n\nCada projeto no QGIS também tem um Sistema de Referência de Coordenadas associado. O projeto SRC determina como os dados são projetados de suas coordenadas brutas subjacentes para o mapa plano renderizado em sua tela de mapa QGIS.\nO QGIS suporta transformação CRS “on the fly” para dados raster e vetoriais. Isso significa que, independentemente do CRS subjacente de camadas de mapa específicas no seu projeto, elas sempre serão transformadas automaticamente no CRS comum definido para o seu projeto. Nos bastidores, o QGIS reprojeta transparentemente todas as camadas contidas no seu projeto no CRS do projeto, para que todas sejam renderizadas na posição correta em relação umas às outras!\nÉ importante fazer uma escolha apropriada de SRC para seus projetos QGIS. Escolher um SRC inadequado pode fazer com que seus mapas pareçam distorcidos e reflitam mal os tamanhos relativos do mundo real e as posições das feições. Normalmente, ao trabalhar em áreas geográficas menores, haverá vários SRCs padrão usados em um determinado país ou área administrativa. É importante pesquisar quais SRCs são escolhas apropriadas ou padrão para a área que você está mapeando e garantir que seu projeto QGIS siga esses padrões.\nPor padrão, o QGIS inicia cada novo projeto usando uma projeção padrão global. Este SRC padrão é EPSG:4326 (também conhecido como “WGS 84”), e é um sistema de referência global baseado na latitude/longitude. Este SRC padrão pode ser alterado através da configuração SRC para Novos Projetos na guia SRC em  (veja figura_opções_de_projeção). Há uma opção para definir automaticamente o SRC do projeto para corresponder ao SRC da primeira camada carregada em um novo projeto ou, alternativamente, você pode selecionar um SRC padrão diferente para utilizar em todos os projetos recém-criados. Esta escolha será salva para uso em sessões subseqüentes do QGIS.\n\nDocumentação QGIS\n6.3. Sistemas referência de coordenadas projetadas",
     "crumbs": [
       "Apresentação Geral do QGIS",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sistema de Referência de Coordenadas - SRC.</span>"
+    ]
+  },
+  {
+    "objectID": "2-painel-navegador.html",
+    "href": "2-painel-navegador.html",
+    "title": "6  Painel do Navegador",
+    "section": "",
+    "text": "6.1 Funcionalidades\nNa parte superior do painel Navegador, você encontra alguns botões que ajudam a:\nAs entradas no painel Navegador são organizadas hierarquicamente e há várias entradas de nível superior:\nDocumentação QGIS\n11.1.1. O Painel do Navegador",
+    "crumbs": [
+      "Carregamento e visualização de dados",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Painel do Navegador</span>"
+    ]
+  },
+  {
+    "objectID": "2-painel-navegador.html#funcionalidades",
+    "href": "2-painel-navegador.html#funcionalidades",
+    "title": "6  Painel do Navegador",
+    "section": "",
+    "text": "Adicionar camadas selecionadas : você também pode adicionar dados à tela do mapa selecionando Adicionar camada(s) selecionada(s) no menu de contexto da camada;\n Atualize a árvore do navegador;\n Filtrar navegador para pesquisar dados específicos. Insira uma palavra de pesquisa ou curinga e o navegador filtrará a árvore para mostrar apenas caminhos para tabelas de BD, nomes de arquivo ou pastas correspondentes – outros dados ou pastas não serão exibidos. Veja o exemplo do Painel do navegador na (Figure 6.1) (https://docs.qgis.org/3.40/pt_BR/docs/user_manual/managing_data_source/opening_data.html#figure-browser-panels) . A comparação pode ser sensível a maiúsculas e minúsculas ou não. Também pode ser definida como:\n\nNormal: mostra itens que contêm o texto de pesquisa\nCuringa(s) : ajuste fino da pesquisa usando os caracteres ?e/ou * para especificar a posição do texto da pesquisa\nExpressão regular\n\n Recolher toda a árvore inteira;\n Ativar/desativar widget de propriedades : quando ativado, um novo widget é adicionado na parte inferior do painel, mostrando, se aplicável, metadados para o item selecionado.\n\n\n\nFavoritos onde você pode colocar atalhos para locais usados com frequência\nMarcadores espaciais onde você pode armazenar extensões de mapa usadas com frequência (consulte Marcadores de extensões no mapa )\nProject Home : para acesso rápido à pasta na qual (a maioria dos) dados relacionados ao seu projeto estão armazenados. O valor padrão é o diretório onde seu arquivo de projeto reside.\nDiretório inicial no sistema de arquivos e diretório raiz do sistema de arquivos.\nUnidades locais ou de rede conectadas\nEm seguida, vêm vários tipos de contêiner/banco de dados e protocolos de serviço, dependendo da sua plataforma e bibliotecas subjacentes:\n\n Pacote Geo\n Espaço Lite\n PostgreSQL\n SAP-HANA\n Servidor MS SQL\n Oráculo\n WMS/WMTS\n Telhas de vetor\n Azulejos XYZ\n WCS\n Recursos da API WFS/OGC\n Servidor ArcGIS REST",
+    "crumbs": [
+      "Carregamento e visualização de dados",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Painel do Navegador</span>"
     ]
   },
   {
     "objectID": "2-1-vetores.html",
     "href": "2-1-vetores.html",
-    "title": "6  - ADICIONANDO CAMADAS VETORIAIS",
+    "title": "7  Carregando Vetores",
     "section": "",
     "text": "O QGIS possibilita trabalhar com diversos tipos de dados vetoriais dentre os quais podemos destacar:\nGeopakage (.gpkg): GeoPackage é um formato de arquivo que permite armazenar e compartilhar dados geoespaciais, como imagens, mapas, atributos e geometrias. Ele foi desenvolvido pelo Open Geospatial Consortium (OGC) e é compatível com vários dispositivos e plataformas.\nPrincipais características:\n\nÉ um formato aberto, não-proprietário e independente de plataforma\nÉ um contêiner SQLite 3\nPossui um esquema de banco de dados específico\nA extensão do nome do arquivo é .gpkg\nPermite armazenar vários tipos de dados geoespaciais\nFacilita a distribuição e aumenta a interoperabilidade entre plataformas\n\nArquivo shape ESRI (.shp): Formato nativo do principal software comercial de Sistemas de Informação Geográfica, geralmente é formado por pelo menos 3 arquivos com as seguintes extensões .SHP (dados vetoriais), .DBF (banco de dados) e .SHX (arquivo de ligação entre o . SHP e .DBF), outro arquivo que pode acompanhar estes três e o arquivo de projeção .PRJ (nativo do principal software comercial, mas reconhecido pelo QGIS) ou o arquivo .QPJ (nativo do QGIS) estes dois arquivos armazenam o sistema de coordenadas e datum da camada. Os arquivos podem ser visualizado abaixo:\nMicrostation DGN (.dgn): Formato do software de Desenho Assistido por Computador (CAD) mais utilizado no INCRA;\nValores separados por vírgula (.csv): Formato bastante leve e rápido de ser processado que pode ser produzido em editores de texto;\nGPS eXchange Format [GPX] (.gpx): Formato em que a maioria dos programas que processam dados de GPS conseguem exportar as informações coletados em campo;\nKeyhole Markup Language [KML] (.kml): Formato produzido inicialmente para ser visualizado no software Google Earth, diversos sites atualmente distribuem informações neste formato;\nAutoCAD DXF (.dxf): Formato do principal software de Desenho Assistido por Computador (CAD) utilizado em todo o mundo;\nOBS: A forma como os arquivos vetoriais são produzidos nos programas CAD pode dificultar a abertura dos mesmos, por exemplo, hachuras, arquivos “atachados”, pontos e pedaços de linha que não fazem parte (“sujam”) do mapa devem ser evitados. Quanto mais o desenho se basear em estruturas como pontos, linhas e polígonos mais facilmente serão reconhecidos e menor a possibilidade de conflitos.\nPara visualizar tais arquivos no QGIS temos 3 opções:\nI. Utilizar a Barra de Menu Camada &gt; Adicionar camada vetorial;",
     "crumbs": [
       "Carregamento e visualização de dados",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>- ADICIONANDO CAMADAS VETORIAIS</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Carregando Vetores</span>"
     ]
   },
   {
     "objectID": "2-2-raster.html",
     "href": "2-2-raster.html",
-    "title": "7  ADICIONANDO CAMADAS RASTER OU MATRICIAIS.",
+    "title": "8  Carregando Raster ou Matrizes",
     "section": "",
     "text": "O QuantumGis permite trabalhar com diversos formatos de imagem, dentre as mais comuns estão:\nJPEG (Joint Pictures Expert Group): é um formato de imagem que através de compressão elimina as informações de cores que o olho humano não é capaz de detectar e em função disso, apesar de haver perda de qualidade ela não é facilmente percebida, com isso os arquivos gerados são de tamanho relativamente pequeno.\nTIFF (Tagged Image File Format): foi desenvolvido em 1986 em uma tentativa de criar um padrão para imagens geradas por equipamentos digitais. O formato é capaz de armazenar imagens em preto ou branco, escalas de cinza e em paletas de cores com 24 ou com 32 bits.\nGeoTIFF: é um padrão de metadados de Domínio público o qual permite embutir informações das Coordenadas geográficas em um arquivo TIFF. A informação adicional potencial inclui Projeções cartográficas, Sistema de coordenadas, Elipsóides, datums, e tudo mais necessário para estabelecer a referência espacial exata no arquivo.",
     "crumbs": [
       "Carregamento e visualização de dados",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>ADICIONANDO CAMADAS RASTER OU MATRICIAIS.</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Carregando Raster ou Matrizes</span>"
     ]
   }
 ]

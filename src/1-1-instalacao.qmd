@@ -1,4 +1,4 @@
-# BAIXANDO E INSTALANDO
+# Instalação
 
 o QGIS possui insteface com divérsos sistema operacionais podendo ser baixado do site [qgis.org/](https://qgis.org/download/){target="_blak"}. 
 

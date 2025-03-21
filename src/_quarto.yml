@@ -25,6 +25,7 @@ book:
       - 1-4-sistema-coordenadas.qmd
     - part: "Carregamento e visualização de dados"
       chapters:
+      - 2-painel-navegador.qmd
       - 2-1-vetores.qmd
       - 2-2-raster.qmd
 

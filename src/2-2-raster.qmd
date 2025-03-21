@@ -1,4 +1,4 @@
-# ADICIONANDO CAMADAS RASTER OU MATRICIAIS.
+# Carregando Raster ou Matrizes
 
 O QuantumGis permite trabalhar com diversos formatos de imagem, dentre as mais
 comuns estão:

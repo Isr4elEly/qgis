@@ -1,4 +1,4 @@
-# - ADICIONANDO CAMADAS VETORIAIS
+# Carregando Vetores
 
 O QGIS possibilita trabalhar com diversos tipos de dados vetoriais dentre os quais podemos destacar:
 

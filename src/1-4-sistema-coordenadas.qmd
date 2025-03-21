@@ -1,4 +1,4 @@
-# SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.
+# Sistema de Referência de Coordenadas - SRC.
 
 
 ![Sistema de Referência de Coordenadas](img/SRC.png)
