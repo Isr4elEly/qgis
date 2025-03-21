@@ -48,3 +48,8 @@ Calcular áreas e distâncias é uma necessidade comum em GIS. No entanto, esses
     -   [diálogo de medida](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#sec-measure)
         
     -   [decoração de barra de escala](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#scalebar-decoration)
+
+---
+Documentação QGIS
+
+[5.3. Propriedades do Projeto](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_configuration.html#project-properties){target="_blank"}

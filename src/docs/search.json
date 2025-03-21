@@ -112,7 +112,7 @@
     "href": "1-3-propriedade-projeto.html",
     "title": "4  CONFIGURANDO AS PROPRIEDADES DO PROJETO.",
     "section": "",
-    "text": "4.1 Geral\nNa aba  Geral, a aba Configurações Gerais permite a você:\nCalcular áreas e distâncias é uma necessidade comum em GIS. No entanto, esses valores estão realmente vinculados às configurações de projeção subjacentes. O quadro Measurements permite que você controle esses parâmetros. Você pode, de fato, escolher:",
+    "text": "4.1 Geral\nNa aba  Geral, a aba Configurações Gerais permite a você:\nCalcular áreas e distâncias é uma necessidade comum em GIS. No entanto, esses valores estão realmente vinculados às configurações de projeção subjacentes. O quadro Measurements permite que você controle esses parâmetros. Você pode, de fato, escolher:\nDocumentação QGIS\n5.3. Propriedades do Projeto",
     "crumbs": [
       "Apresentação Geral do QGIS",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>CONFIGURANDO AS PROPRIEDADES DO PROJETO.</span>"
@@ -127,6 +127,17 @@
     "crumbs": [
       "Apresentação Geral do QGIS",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>CONFIGURANDO AS PROPRIEDADES DO PROJETO.</span>"
+    ]
+  },
+  {
+    "objectID": "1-4-sistema-coordenadas.html",
+    "href": "1-4-sistema-coordenadas.html",
+    "title": "5  SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.",
+    "section": "",
+    "text": "Sistema de Referência de Coordenadas\n\n\nCada projeto no QGIS também tem um Sistema de Referência de Coordenadas associado. O projeto SRC determina como os dados são projetados de suas coordenadas brutas subjacentes para o mapa plano renderizado em sua tela de mapa QGIS.\nO QGIS suporta transformação CRS “on the fly” para dados raster e vetoriais. Isso significa que, independentemente do CRS subjacente de camadas de mapa específicas no seu projeto, elas sempre serão transformadas automaticamente no CRS comum definido para o seu projeto. Nos bastidores, o QGIS reprojeta transparentemente todas as camadas contidas no seu projeto no CRS do projeto, para que todas sejam renderizadas na posição correta em relação umas às outras!\nÉ importante fazer uma escolha apropriada de SRC para seus projetos QGIS. Escolher um SRC inadequado pode fazer com que seus mapas pareçam distorcidos e reflitam mal os tamanhos relativos do mundo real e as posições das feições. Normalmente, ao trabalhar em áreas geográficas menores, haverá vários SRCs padrão usados em um determinado país ou área administrativa. É importante pesquisar quais SRCs são escolhas apropriadas ou padrão para a área que você está mapeando e garantir que seu projeto QGIS siga esses padrões.\nPor padrão, o QGIS inicia cada novo projeto usando uma projeção padrão global. Este SRC padrão é EPSG:4326 (também conhecido como “WGS 84”), e é um sistema de referência global baseado na latitude/longitude. Este SRC padrão pode ser alterado através da configuração SRC para Novos Projetos na guia SRC em  (veja figura_opções_de_projeção). Há uma opção para definir automaticamente o SRC do projeto para corresponder ao SRC da primeira camada carregada em um novo projeto ou, alternativamente, você pode selecionar um SRC padrão diferente para utilizar em todos os projetos recém-criados. Esta escolha será salva para uso em sessões subseqüentes do QGIS.\n\nDocumentação QGIS\n6.3. Sistemas referência de coordenadas projetadas",
+    "crumbs": [
+      "Apresentação Geral do QGIS",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.</span>"
     ]
   },
   {

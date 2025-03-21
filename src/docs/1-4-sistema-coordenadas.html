@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; CRIANDO UM SRC PERSONALIZADO. – Elaboração de mapas com o QGIS</title>
+<title>5&nbsp; SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC. – Elaboração de mapas com o QGIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-4-sistema-coordenadas.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">CRIANDO UM SRC PERSONALIZADO.</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-4-sistema-coordenadas.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-4-sistema-coordenadas.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">CRIANDO UM SRC PERSONALIZADO.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.</span></span></a>
   </div>
 </li>
       </ul>
@@ -191,9 +191,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-page-right" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-4-sistema-coordenadas.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">CRIANDO UM SRC PERSONALIZADO.</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-4-sistema-coordenadas.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">CRIANDO UM SRC PERSONALIZADO.</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">SISTEMAS DE REFERENCIA DE CORRDENADAS - SRC.</span></h1>
 </div>
 
 
@@ -210,6 +210,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/SRC.png" class="img-fluid figure-img"></p>
+<figcaption>Sistema de Referência de Coordenadas</figcaption>
+</figure>
+</div>
+<p>Cada projeto no QGIS também tem um Sistema de Referência de Coordenadas associado. O projeto SRC determina como os dados são projetados de suas coordenadas brutas subjacentes para o mapa plano renderizado em sua tela de mapa QGIS.</p>
+<p>O QGIS suporta transformação CRS “on the fly” para dados raster e vetoriais. Isso significa que, independentemente do CRS subjacente de camadas de mapa específicas no seu projeto, elas sempre serão transformadas automaticamente no CRS comum definido para o seu projeto. Nos bastidores, o QGIS reprojeta transparentemente todas as camadas contidas no seu projeto no CRS do projeto, para que todas sejam renderizadas na posição correta em relação umas às outras!</p>
+<p>É importante fazer uma escolha apropriada de SRC para seus projetos QGIS. Escolher um SRC inadequado pode fazer com que seus mapas pareçam distorcidos e reflitam mal os tamanhos relativos do mundo real e as posições das feições. Normalmente, ao trabalhar em áreas geográficas menores, haverá vários SRCs padrão usados em um determinado país ou área administrativa. É importante pesquisar quais SRCs são escolhas apropriadas ou padrão para a área que você está mapeando e garantir que seu projeto QGIS siga esses padrões.</p>
+<p>Por padrão, o QGIS inicia cada novo projeto usando uma projeção padrão global. Este SRC padrão é <code>EPSG:4326</code> (também conhecido como “WGS 84”), e é um sistema de referência global baseado na latitude/longitude. Este SRC padrão pode ser alterado através da configuração SRC para Novos Projetos na guia SRC em <a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionOptions.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionOptions.png" class="img-fluid" alt="opções"></a> (veja <code>figura_opções_de_projeção</code>). Há uma opção para definir automaticamente o SRC do projeto para corresponder ao SRC da primeira camada carregada em um novo projeto ou, alternativamente, você pode selecionar um SRC padrão diferente para utilizar em todos os projetos recém-criados. Esta escolha será salva para uso em sessões subseqüentes do QGIS.</p>
+<hr>
+<p>Documentação QGIS</p>
+<p><a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/working_with_projections/working_with_projections.html#project-coordinate-reference-systems" target="_blank">6.3. Sistemas referência de coordenadas projetadas</a></p>
 
 
 
