@@ -185,11 +185,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#geral" id="toc-geral" class="nav-link active" data-scroll-target="#geral"><span class="header-section-number">4.1</span> Geral</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1-instalacao.html">Apresentação Geral do QGIS</a></li><li class="breadcrumb-item"><a href="./1-3-propriedade-projeto.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">CONFIGURANDO AS PROPRIEDADES DO PROJETO.</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -198,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -210,15 +216,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Para acessar as configurações do projeto acesse o menu Configurações / “Propriedades do Projeto…” ou “Crtl + Shift + P”</p>
-<p>Será aberta uma janela com as abas abaixo:</p>
-<p>A primeira aba das propriedades do projeto, Geral, permite dar um nome ao projeto, definir as cores de fundo e seleção, as unidades e a precisão do projeto (<strong>IMPORTANTE</strong>) neste item, escolher para o campo Salvar caminhos: a opção Relativo pois a mesma permite que o projeto seja salvo em HDs externos ou pendrives diminuindo problemas quando o projeto for aberto em outras máquinas.</p>
-<p>A segunda aba permite definir o sistema de coordenadas – projeção e datum. Como já explicado anteriormente ative “Habilita transformação SRC on the fly”.</p>
-<p>As outras abas da configuração do projeto não necessitam ter suas configurações padrão alteradas.</p>
-<p>Depois dessas configurações o QGIS está pronto para ser utilizado, sendo assim vamos Salvar o nosso projeto.</p>
-<p>O projeto para o Quantum GIS um arquivo na extensão *.qgs que reúne as informações sobre as camadas adicionadas, as propriedades de visualização das camadas, a projeção e datum em que a visualização do mapa ocorrerá e a última visualização salva das camadas. Só é possível trabalhar com um projeto de cada vez. Acesse o menu dê o nome que preferir e clique no botão OK.</p>
+<p>Para acessar as configurações do projeto acesse o menu <code>Projeto</code> &gt; <code>Propriedades</code> ou <code>Crtl + Shift + P</code>.</p>
+<p>O projeto do QGIS é um arquivo de configuração onde são armazenados os caminhos para os arquivos as camadas, bem como as configurações de cores.</p>
+<div id="fig-propriedade_projeto" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-propriedade_projeto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/propriedade-projeto.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-propriedade_projeto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: Propriedade do Projeto
+</figcaption>
+</figure>
+</div>
+<section id="geral" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="geral"><span class="header-section-number">4.1</span> Geral</h2>
+<p>Na aba <a href="https://docs.qgis.org/3.40/pt_BR/_images/general.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/general.png" class="img-fluid" alt="general"></a> Geral, a aba Configurações Gerais permite a você:</p>
+<ul>
+<li><p>veja a localização do arquivo do projeto</p></li>
+<li><p>defina a pasta para a home do projeto (disponível no item Home do projeto do painel Navegador). O caminho pode ser relativo à pasta do arquivo do projeto (digite-o) ou absoluto. A home do projeto pode ser usada para armazenar dados e outros conteúdos que sejam úteis para o projeto. Conveniente quando os arquivos do conjunto de dados e do projeto não são armazenados no mesmo lugar. Se não for preenchido, a home do projeto assume como padrão a pasta do arquivo do projeto.</p></li>
+<li><p>dê um título ao projeto ao lado do caminho do arquivo do projeto</p></li>
+<li><p>escolha a cor a ser usada para as feições quando elas são selecionadas</p></li>
+<li><p>escolha a cor de fundo: a cor a ser usada na tela do mapa</p></li>
+<li><p>defina se o caminho para camadas no projeto deve ser salvo como absoluto (completo) ou como relativo ao local do arquivo do projeto. Você pode preferir caminho relativo quando camadas e arquivos do projeto podem ser movidos ou compartilhados ou se o projeto for acessado de computadores em plataformas diferentes.</p></li>
+<li><p>escolha evitar artefatos quando o projeto for renderizado como blocos de mapa. Observe que marcar esta opção pode levar à degradação do desempenho.</p></li>
+<li><p>Lembre-se das janelas e docas de tabelas de atributos entre sessões: Se marcadas para um projeto, todas as tabelas de atributos abertas serão salvas no projeto e imediatamente restauradas ao carregar esse projeto. Isso pode melhorar os fluxos de trabalho quando você construiu um projeto com um conjunto específico de configurações de tabelas de atributos para seus requisitos, e reconfigurar essas tabelas de atributos é um incômodo.</p></li>
+</ul>
+<p>Calcular áreas e distâncias é uma necessidade comum em GIS. No entanto, esses valores estão realmente vinculados às configurações de projeção subjacentes. O quadro Measurements permite que você controle esses parâmetros. Você pode, de fato, escolher:</p>
+<ul>
+<li><p>o Elipsóide, no qual os cálculos de distância, área e ângulo são inteiramente baseados; pode ser:</p>
+<ul>
+<li><p><strong>Nenhum/Planimétrico</strong>: os valores retornados são neste caso medidas cartesianas. Esta opção pode ser definida como padrão para novos projetos a partir do <a href="https://docs.qgis.org/3.40/pt_BR/_images/mActionOptions.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/mActionOptions.png" class="img-fluid" alt="options"></a> <a href="https://docs.qgis.org/3.40/pt_BR/_images/CRS.png"><img src="https://docs.qgis.org/3.40/pt_BR/_images/CRS.png" class="img-fluid" alt="crs"></a> menu</p></li>
+<li><p>um <strong>Personalizado</strong>: você precisará definir valores dos eixos semi-maior e semi-menor.</p></li>
+<li><p>ou um existente de uma lista predefinida (Clarke 1866, Clarke 1880 IGN, New International 1967, WGS 84…).</p></li>
+</ul></li>
+<li><p>as Unidades para medidas de distância para comprimento e perímetro, e as Unidades para medidas de área. Essas configurações que são padronizadas para seus correspondentes <a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_configuration.html#global-measure-tool">global options</a> sobrescrevê-los no projeto atual. Eles são usados ​​em:</p>
+<ul>
+<li><p>Barra de atualização de campo da tabela de atributos</p></li>
+<li><p>Cálculos da calculadora de campo</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/general_tools.html#identify">Ferramenta de Identificação</a> valores derivados de comprimento, perímetro e área</p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#sec-measure">diálogo de medida</a></p></li>
+<li><p><a href="https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#scalebar-decoration">decoração de barra de escala</a></p></li>
+</ul></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -641,7 +683,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="./1-2-configuracao-geral.html" class="pagination-link" aria-label="CONFIGURANDO OPÇÕES">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">CONFIGURANDO OPÇÕES</span></span>

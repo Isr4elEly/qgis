@@ -1,15 +1,50 @@
 # CONFIGURANDO AS PROPRIEDADES DO PROJETO.
 
-Para acessar as configurações do projeto acesse o menu Configurações / “Propriedades do Projeto...” ou “Crtl + Shift + P”
+Para acessar as configurações do projeto acesse o menu `Projeto` > `Propriedades` ou `Crtl + Shift + P`.
 
-Será aberta uma janela com as abas abaixo:
+O projeto do QGIS é um arquivo de configuração onde são armazenados os caminhos para os arquivos as camadas, bem como as configurações de cores.
 
-A primeira aba das propriedades do projeto, Geral, permite dar um nome ao projeto, definir as cores de fundo e seleção, as unidades e a precisão do projeto (**IMPORTANTE**) neste item, escolher para o campo Salvar caminhos: a opção Relativo pois a mesma permite que o projeto seja salvo em HDs externos ou pendrives diminuindo problemas quando o projeto for aberto em outras máquinas.
+![Propriedade do Projeto](img/propriedade-projeto.png){#fig-propriedade_projeto}
 
-A segunda aba permite definir o sistema de coordenadas – projeção e datum. Como já explicado anteriormente ative “Habilita transformação SRC on the fly”.
 
-As outras abas da configuração do projeto não necessitam ter suas configurações padrão alteradas.
+## Geral
 
-Depois dessas configurações o QGIS está pronto para ser utilizado, sendo assim vamos Salvar o nosso projeto.
+Na aba [![general](https://docs.qgis.org/3.40/pt_BR/_images/general.png)](https://docs.qgis.org/3.40/pt_BR/_images/general.png) Geral, a aba Configurações Gerais permite a você:
 
-O projeto para o Quantum GIS um arquivo na extensão *.qgs que reúne as informações sobre as camadas adicionadas, as propriedades de visualização das camadas, a projeção e datum em que a visualização do mapa ocorrerá e a última visualização salva das camadas. Só é possível trabalhar com um projeto de cada vez. Acesse o menu dê o nome que preferir e clique no botão OK.
+-   veja a localização do arquivo do projeto
+    
+-   defina a pasta para a home do projeto (disponível no item Home do projeto do painel Navegador). O caminho pode ser relativo à pasta do arquivo do projeto (digite-o) ou absoluto. A home do projeto pode ser usada para armazenar dados e outros conteúdos que sejam úteis para o projeto. Conveniente quando os arquivos do conjunto de dados e do projeto não são armazenados no mesmo lugar. Se não for preenchido, a home do projeto assume como padrão a pasta do arquivo do projeto.
+    
+-   dê um título ao projeto ao lado do caminho do arquivo do projeto
+    
+-   escolha a cor a ser usada para as feições quando elas são selecionadas
+    
+-   escolha a cor de fundo: a cor a ser usada na tela do mapa
+    
+-   defina se o caminho para camadas no projeto deve ser salvo como absoluto (completo) ou como relativo ao local do arquivo do projeto. Você pode preferir caminho relativo quando camadas e arquivos do projeto podem ser movidos ou compartilhados ou se o projeto for acessado de computadores em plataformas diferentes.
+    
+-   escolha evitar artefatos quando o projeto for renderizado como blocos de mapa. Observe que marcar esta opção pode levar à degradação do desempenho.
+    
+-  Lembre-se das janelas e docas de tabelas de atributos entre sessões: Se marcadas para um projeto, todas as tabelas de atributos abertas serão salvas no projeto e imediatamente restauradas ao carregar esse projeto. Isso pode melhorar os fluxos de trabalho quando você construiu um projeto com um conjunto específico de configurações de tabelas de atributos para seus requisitos, e reconfigurar essas tabelas de atributos é um incômodo.
+
+Calcular áreas e distâncias é uma necessidade comum em GIS. No entanto, esses valores estão realmente vinculados às configurações de projeção subjacentes. O quadro Measurements permite que você controle esses parâmetros. Você pode, de fato, escolher:
+
+-   o Elipsóide, no qual os cálculos de distância, área e ângulo são inteiramente baseados; pode ser:
+    
+    -   **Nenhum/Planimétrico**: os valores retornados são neste caso medidas cartesianas. Esta opção pode ser definida como padrão para novos projetos a partir do [![options](https://docs.qgis.org/3.40/pt_BR/_images/mActionOptions.png)](https://docs.qgis.org/3.40/pt_BR/_images/mActionOptions.png) [![crs](https://docs.qgis.org/3.40/pt_BR/_images/CRS.png)](https://docs.qgis.org/3.40/pt_BR/_images/CRS.png) menu
+        
+    -   um **Personalizado**: você precisará definir valores dos eixos semi-maior e semi-menor.
+        
+    -   ou um existente de uma lista predefinida (Clarke 1866, Clarke 1880 IGN, New International 1967, WGS 84…).
+        
+-   as Unidades para medidas de distância para comprimento e perímetro, e as Unidades para medidas de área. Essas configurações que são padronizadas para seus correspondentes [global options](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_configuration.html#global-measure-tool) sobrescrevê-los no projeto atual. Eles são usados ​​em:
+    
+    -   Barra de atualização de campo da tabela de atributos
+        
+    -   Cálculos da calculadora de campo
+        
+    -   [Ferramenta de Identificação](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/general_tools.html#identify) valores derivados de comprimento, perímetro e área
+        
+    -   [diálogo de medida](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#sec-measure)
+        
+    -   [decoração de barra de escala](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/map_views/map_view.html#scalebar-decoration)
