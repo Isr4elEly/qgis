@@ -1,0 +1,11 @@
+# ADICIONANDO CAMADAS RASTER OU MATRICIAIS.
+
+O QuantumGis permite trabalhar com diversos formatos de imagem, dentre as mais
+comuns estão:
+
+**JPEG (Joint Pictures Expert Group)**: é um formato de imagem que através de compressão elimina as informações de cores que o olho humano não é capaz de detectar e em função disso, apesar de haver perda de qualidade ela não é facilmente percebida, com isso os arquivos gerados são de tamanho relativamente pequeno.
+
+**TIFF (Tagged Image File Format)**: foi desenvolvido em 1986 em uma tentativa de criar um padrão para imagens geradas por equipamentos digitais. O formato é capaz de armazenar imagens em preto ou branco, escalas de cinza e em paletas de cores com 24 ou com 32 bits.
+
+**GeoTIFF**: é um padrão de metadados de Domínio público o qual permite embutir informações das Coordenadas geográficas em um arquivo TIFF. A informação adicional potencial inclui Projeções cartográficas, Sistema de coordenadas, Elipsóides, datums, e tudo mais necessário para estabelecer a referência espacial exata no arquivo.
+

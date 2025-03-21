@@ -1,0 +1,417 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+  a4paper,
+]{book}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[top=30mm,left=25mm,right=20mm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Índice}
+\else
+  \newcommand\contentsname{Índice}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Lista de Figuras}
+\else
+  \newcommand\listfigurename{Lista de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Lista de Tabelas}
+\else
+  \newcommand\listtablename{Lista de Tabelas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabela}
+\else
+  \newcommand\tablename{Tabela}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listagem}
+\newcommand*\listoflistings{\listof{codelisting}{Lista de Listagens}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{brazilian}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Elaboração de mapas com o QGIS},
+  pdfauthor={Israel Ely},
+  pdflang={pt-br},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Elaboração de mapas com o QGIS}
+\author{Israel Ely}
+\date{quinta-feira, 20 de março de 2025}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Índice}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\markboth{Preface}{Preface}
+
+This is a Quarto book.
+
+To learn more about Quarto books visit
+\url{https://quarto.org/docs/books}.
+
+\bookmarksetup{startatroot}
+
+\chapter{APRESENTAÇÃO GERAL DO QUANTUM
+GIS}\label{apresentauxe7uxe3o-geral-do-quantum-gis}
+
+O Quantum GIS (QGIS) apresenta uma interface bastante amigável e que
+pode ser completamente customizada de acordo com as suas necessidades.
+Abaixo é apresentada a tela inicial do programa em sua configuração
+padrão.
+
+\part{Apresentação Geral do QGIS}
+
+\chapter{BAIXANDO E INSTALANDO COMPLEMENTOS /
+PLUGINS}\label{baixando-e-instalando-complementos-plugins}
+
+O QGIS apresenta uma série de complementos, também chamados de plugins
+que disponibilizam ao usuário uma série de funcionalidades. Vamos
+começar, configurando o QGIS para baixá-los e instalá-los.
+
+Acesse o repositório oficial dos plugins (http://pyQGIS.org/), escolha o
+plugin\_installer.zip (Borys Jurgiel) e realize o download, assim como
+indicado na figura abaixo.
+
+Na versão do Quantum Gis 1.7 fornecida no DVD do treinamento este plugin
+já vem instalado por padrão. A sequência abaixo mostra a forma de
+instalação manual dos plugins, portanto siga para o próximo item da
+apostila.
+
+Uma vez baixado o plugin, vamos realizar a instalação. Copie o arquivo
+baixado para a pasta especificada no caminho: C:\Arquivos de
+programas\Quantum GIS Wroclaw\apps\QGIS\python\plugins, (todos os
+plugins devem ser descompactados nesta pasta quando instalados
+manualmente) e descompacte o arquivo. Agora, basta abrir o menu
+Complementos / Gerenciar complementos e o plugin instalado deverá
+aparecer lá, caso contrário feche e abra novamente; basta então clicar
+na caixa ao lado no nome do plugin para que ele fique disponível para
+utilização.
+
+O complemento Plugin Installer permite que os complementos sejam
+baixados e atualizados de forma automática.
+
+No menu Opções acesse a aba Rede, caso sua superintendência utilize um
+proxy para acessar a internet, procure saber no setor de informática
+qual é o número, marque a caixa e preencha os campos com o número do
+proxy, a porta, o seu nome de usuário e senha, não esqueça de escolher
+no item Tipo de Proxy HttpProxy como na figura abaixo.
+
+Em casa ou caso sua SR não utilize proxy é só desmarcar a já citada
+caixa e finalizar esta etapa.
+
+Em seguida, no menu Complementos aparecerá uma nova opção, , clique nela
+e será aberta a janela abaixo que contém 3 abas: Complementos,
+Repositórios, Opções; clique na aba Repositórios.
+
+Na aba Repositórios, acione o botão ``Adicionar um grupo terceiro de
+repositórios''.
+
+Em seguida, passe para a aba Opções configure-a conforme a figura
+abaixo:
+
+Finalmente clique na aba Complementos, ela deverá mostrar vários plugins
+disponíveis para instalação, cada plugin traz o nome e uma breve
+descrição da sua funcionalidade, agora é só escolher e clicar no botão
+instalar/atualizar complemento para que ele seja instalado.
+
+Feito isso, basta ir novamente ao menu Complementos / Gerenciar
+complementos, clicar na caixa do plugin instalado e pronto, ele deverá
+estar disponível na Barra de Complementos da área de trabalho ou caso
+não apareça, clique novamente no menu Complementos e ele deverá estar
+habilitado.
+
+Dando sequência, por enquanto iremos habilitar os seguintes plugins além
+do Instalador de Complementos já instalado:
+
+\chapter{CONFIGURANDO OPÇÕES}\label{configurando-opuxe7uxf5es}
+
+Acesse a barra de menus Configurações / Opções , será aberta uma janela
+com as seguintes abas:
+
+Iniciaremos configurando a aba Geral, marque as opções conforme a figura
+abaixo:
+
+Em seguida passaremos para a aba Ferramentas de Mapa, configure as
+ferramentas de medida de acordo a figura abaixo:
+
+A próxima aba a ser configurada é Digitalizar, configure o campo Atração
+para que ele funcione, como mostrado na figura abaixo:
+
+A última aba a ser configurada é a SRC, que permite definir o sistema de
+coordenadas -- projeção e datum. Importante saber que o QGIS permite a
+visualização de dados em diferentes sistemas de coordenadas sem que você
+tenha que transformá-los primeiro, bastando para isso ativar Habilitar
+reprojeção ``on the fly'' como padrão. Até a versão anterior do QGIS,
+essa transformação automática era válida apenas para dados vetoriais,
+entretanto o QGIS 1.7 suporta este tipo de transformação para dados
+raster.
+
+Para configurar esta aba siga o padrão da figura abaixo:
+
+\chapter{CONFIGURANDO AS PROPRIEDADES DO
+PROJETO.}\label{configurando-as-propriedades-do-projeto.}
+
+Para acessar as configurações do projeto acesse o menu Configurações /
+``Propriedades do Projeto\ldots{}'' ou ``Crtl + Shift + P''
+
+Será aberta uma janela com as abas abaixo:
+
+A primeira aba das propriedades do projeto, Geral, permite dar um nome
+ao projeto, definir as cores de fundo e seleção, as unidades e a
+precisão do projeto (\textbf{IMPORTANTE}) neste item, escolher para o
+campo Salvar caminhos: a opção Relativo pois a mesma permite que o
+projeto seja salvo em HDs externos ou pendrives diminuindo problemas
+quando o projeto for aberto em outras máquinas.
+
+A segunda aba permite definir o sistema de coordenadas -- projeção e
+datum. Como já explicado anteriormente ative ``Habilita transformação
+SRC on the fly''.
+
+As outras abas da configuração do projeto não necessitam ter suas
+configurações padrão alteradas.
+
+Depois dessas configurações o QGIS está pronto para ser utilizado, sendo
+assim vamos Salvar o nosso projeto.
+
+O projeto para o Quantum GIS um arquivo na extensão *.qgs que reúne as
+informações sobre as camadas adicionadas, as propriedades de
+visualização das camadas, a projeção e datum em que a visualização do
+mapa ocorrerá e a última visualização salva das camadas. Só é possível
+trabalhar com um projeto de cada vez. Acesse o menu dê o nome que
+preferir e clique no botão OK.
+
+\chapter{CRIANDO UM SRC
+PERSONALIZADO.}\label{criando-um-src-personalizado.}
+
+\part{Carregamento e visualização de dados}
+
+\chapter{- ADICIONANDO CAMADAS
+VETORIAIS}\label{adicionando-camadas-vetoriais}
+
+O QGIS possibilita trabalhar com diversos tipos de dados vetoriais
+dentre os quais podemos destacar:
+
+**Geopakage (*.gpkg)**: GeoPackage é um formato de arquivo que permite
+armazenar e compartilhar dados geoespaciais, como imagens, mapas,
+atributos e geometrias. Ele foi desenvolvido pelo Open Geospatial
+Consortium (OGC) e é compatível com vários dispositivos e plataformas.
+
+Principais características: - É um formato aberto, não-proprietário e
+independente de plataforma - É um contêiner SQLite 3 - Possui um esquema
+de banco de dados específico - A extensão do nome do arquivo é .gpkg -
+Permite armazenar vários tipos de dados geoespaciais - Facilita a
+distribuição e aumenta a interoperabilidade entre plataformas
+
+\textbf{Arquivo shape ESRI (\emph{.shp}.SHP)}: Formato nativo do
+principal software comercial de Sistemas de Informação Geográfica,
+geralmente é formado por pelo menos 3 arquivos com as seguintes
+extensões .SHP (dados vetoriais), .DBF (banco de dados) e .SHX (arquivo
+de ligação entre o . SHP e .DBF), outro arquivo que pode acompanhar
+estes três e o arquivo de projeção .PRJ (nativo do principal software
+comercial, mas reconhecido pelo QGIS) ou o arquivo .QPJ (nativo do QGIS)
+estes dois arquivos armazenam o sistema de coordenadas e datum da
+camada. Os arquivos podem ser visualizado abaixo:
+
+\textbf{Microstation DGN (\emph{.dgn}.DGN)}: Formato do software de
+Desenho Assistido por Computador (CAD) mais utilizado no INCRA;
+
+\textbf{Valores separados por vírgula (\emph{.csv}.CSV)}: Formato
+bastante leve e rápido de ser processado que pode ser produzido em
+editores de texto;
+
+\textbf{GPS eXchange Format {[}GPX{]} (\emph{.gpx}.GPX)}: Formato em que
+a maioria dos programas que processam dados de GPS conseguem exportar as
+informações coletados em campo;
+
+\textbf{Keyhole Markup Language {[}KML{]} (\emph{.kml}.KML)}: Formato
+produzido inicialmente para ser visualizado no software Google Earth,
+diversos sites atualmente distribuem informações neste formato;
+
+\textbf{AutoCAD DXF (\emph{.dxf}.DXF)}: Formato do principal software de
+Desenho Assistido por Computador (CAD) utilizado em todo o mundo;
+
+OBS: A forma como os arquivos vetoriais são produzidos nos programas CAD
+pode dificultar a abertura dos mesmos, por exemplo, hachuras, arquivos
+``atachados'', pontos e pedaços de linha que não fazem parte (``sujam'')
+do mapa devem ser evitados. Quanto mais o desenho se basear em
+estruturas como pontos, linhas e polígonos mais facilmente serão
+reconhecidos e menor a possibilidade de conflitos.
+
+Para visualizar tais arquivos no QGIS temos 3 opções:
+
+I. Utilizar a Barra de Menu Camada \textgreater{} Adicionar camada
+vetorial;
+
+\chapter{ADICIONANDO CAMADAS RASTER OU
+MATRICIAIS.}\label{adicionando-camadas-raster-ou-matriciais.}
+
+O QuantumGis permite trabalhar com diversos formatos de imagem, dentre
+as mais comuns estão:
+
+\textbf{JPEG (Joint Pictures Expert Group)}: é um formato de imagem que
+através de compressão elimina as informações de cores que o olho humano
+não é capaz de detectar e em função disso, apesar de haver perda de
+qualidade ela não é facilmente percebida, com isso os arquivos gerados
+são de tamanho relativamente pequeno.
+
+\textbf{TIFF (Tagged Image File Format)}: foi desenvolvido em 1986 em
+uma tentativa de criar um padrão para imagens geradas por equipamentos
+digitais. O formato é capaz de armazenar imagens em preto ou branco,
+escalas de cinza e em paletas de cores com 24 ou com 32 bits.
+
+\textbf{GeoTIFF}: é um padrão de metadados de Domínio público o qual
+permite embutir informações das Coordenadas geográficas em um arquivo
+TIFF. A informação adicional potencial inclui Projeções cartográficas,
+Sistema de coordenadas, Elipsóides, datums, e tudo mais necessário para
+estabelecer a referência espacial exata no arquivo.
+
+
+\backmatter
+
+
+\end{document}

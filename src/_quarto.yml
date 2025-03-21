@@ -1,23 +1,67 @@
 project:
   type: book
+  output-dir: docs
+
+jupyter: python3
 
 book:
-  title: "src"
-  author: "Norah Jones"
-  date: "20/03/2025"
+  sidebar:
+    search: true
+  title: "Elaboração de mapas com o QGIS"
+  language: pt
+  author: "Israel Ely"
+  date: "2025-03-20"
+  date-format: full
+  repo-url: https://github.com/Isr4elEly/qgis
+  cover-image: cover.png
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+    - part: "Apresentação Geral do QGIS"
+      chapters:
+      - 1-1-instalacao.qmd
+      - 1-2-configuracao-geral.qmd
+      - 1-3-propriedade-projeto.qmd
+      - 1-4-sistema-coordenadas.qmd
+    - part: "Carregamento e visualização de dados"
+      chapters:
+      - 2-1-vetores.qmd
+      - 2-2-raster.qmd
 
 format:
   html:
     theme: cosmo
+    default-image-extension: jpg
+    page-layout: full
+    grid: 
+      sidebar-width: 300px
+      body-width: 1100px
+      margin-width: 100px
+      gutter-width: 1.5rem
+    css: styles.css
+    toc: true
+    fig-width: 7
+    fig-height: 5
+    fig-align: center
+ 
   pdf:
-    documentclass: scrreprt
+    documentclass: book
+    toc: true
+    lang: "pt-br"
+    geometry: 
+      - top=30mm
+      - left=25mm
+      - right=20mm
+    number-sections: true
+    colorlinks: true
+    papersize: "a4"
+    fontsize: 11pt
+    latex-auto-install: false
+lenguage:
+  leng: pt-br
+
+plugins:
+  - mkquartodocs
 
 
 

@@ -1,0 +1,15 @@
+# CONFIGURANDO AS PROPRIEDADES DO PROJETO.
+
+Para acessar as configurações do projeto acesse o menu Configurações / “Propriedades do Projeto...” ou “Crtl + Shift + P”
+
+Será aberta uma janela com as abas abaixo:
+
+A primeira aba das propriedades do projeto, Geral, permite dar um nome ao projeto, definir as cores de fundo e seleção, as unidades e a precisão do projeto (**IMPORTANTE**) neste item, escolher para o campo Salvar caminhos: a opção Relativo pois a mesma permite que o projeto seja salvo em HDs externos ou pendrives diminuindo problemas quando o projeto for aberto em outras máquinas.
+
+A segunda aba permite definir o sistema de coordenadas – projeção e datum. Como já explicado anteriormente ative “Habilita transformação SRC on the fly”.
+
+As outras abas da configuração do projeto não necessitam ter suas configurações padrão alteradas.
+
+Depois dessas configurações o QGIS está pronto para ser utilizado, sendo assim vamos Salvar o nosso projeto.
+
+O projeto para o Quantum GIS um arquivo na extensão *.qgs que reúne as informações sobre as camadas adicionadas, as propriedades de visualização das camadas, a projeção e datum em que a visualização do mapa ocorrerá e a última visualização salva das camadas. Só é possível trabalhar com um projeto de cada vez. Acesse o menu dê o nome que preferir e clique no botão OK.

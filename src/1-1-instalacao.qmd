@@ -1,0 +1,11 @@
+# BAIXANDO E INSTALANDO
+
+o QGIS possui insteface com divérsos sistema operacionais podendo ser baixado do site [qgis.org/](https://qgis.org/download/){target="_blak"}. 
+
+As compilações de longo prazo atualmente fornecem 3.40.4 'Bratislava'. As compilações de Long Term Release (LTR) são destinadas àqueles que valorizam a estabilidade em vez de ter os recursos mais recentes. Se não tiver certeza de qual versão é melhor para você, baixe a LTR.
+
+Instalação no Windows
+
+![windows](img/win-install.png)
+
+Baixe o arquivo da versão LTS e execute no seu computados para efetivar a instalação.

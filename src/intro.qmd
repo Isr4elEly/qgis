@@ -1,5 +1,17 @@
-# Introduction
+# APRESENTAÇÃO GERAL DO QUANTUM GIS
 
-This is a book created from markdown and executable code.
+O Quantum GIS (QGIS) apresenta uma interface bastante amigável e que pode ser completamente customizada de acordo com as suas necessidades. Abaixo é apresentada a tela inicial do programa em sua configuração padrão.
 
-See @knuth84 for additional discussion of literate programming.
+![janela_principal](img/tela_principal.png)
+
+1. Menu
+2. Ícones
+3. Camadas
+4. Nevegador de Arquivos
+5. Janela de mapa
+6. Barra de status
+
+---
+Documentação QGIS
+
+[3. Interface do QGIS](https://docs.qgis.org/3.40/pt_BR/docs/user_manual/introduction/qgis_gui.html){target="_blank"}

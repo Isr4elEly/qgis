@@ -1,0 +1,32 @@
+# - ADICIONANDO CAMADAS VETORIAIS
+
+O QGIS possibilita trabalhar com diversos tipos de dados vetoriais dentre os quais podemos destacar:
+
+**Geopakage (.gpkg)**: GeoPackage é um formato de arquivo que permite armazenar e compartilhar dados geoespaciais, como imagens, mapas, atributos e geometrias. Ele foi desenvolvido pelo [Open Geospatial Consortium (OGC)](https://www.ogc.org/){target="_blank"} e é compatível com vários dispositivos e plataformas. 
+
+Principais características:
+
+- É um formato aberto, não-proprietário e independente de plataforma
+- É um contêiner SQLite 3
+- Possui um esquema de banco de dados específico
+- A extensão do nome do arquivo é .gpkg
+- Permite armazenar vários tipos de dados geoespaciais
+- Facilita a distribuição e aumenta a interoperabilidade entre plataformas
+
+**Arquivo shape ESRI (.shp)**: Formato nativo do principal software comercial de Sistemas de Informação Geográfica, geralmente é formado por pelo menos 3 arquivos com as seguintes extensões .SHP (dados vetoriais), .DBF (banco de dados) e .SHX (arquivo de ligação entre o . SHP e .DBF), outro arquivo que pode acompanhar estes três e o arquivo de projeção .PRJ (nativo do principal software comercial, mas reconhecido pelo QGIS) ou o arquivo .QPJ (nativo do QGIS) estes dois arquivos armazenam o sistema de coordenadas e datum da camada. Os arquivos podem ser visualizado abaixo:
+
+**Microstation DGN (.dgn)**: Formato do software de Desenho Assistido por Computador (CAD) mais utilizado no INCRA;
+
+**Valores separados por vírgula (.csv)**: Formato bastante leve e rápido de ser processado que pode ser produzido em editores de texto;
+
+**GPS eXchange Format [GPX] (.gpx)**: Formato em que a maioria dos programas que processam dados de GPS conseguem exportar as informações coletados em campo;
+
+**Keyhole Markup Language [KML] (.kml)**: Formato produzido inicialmente para ser visualizado no software Google Earth, diversos sites atualmente distribuem informações neste formato;
+
+**AutoCAD DXF (.dxf)**: Formato do principal software de Desenho Assistido por Computador (CAD) utilizado em todo o mundo;
+
+OBS: A forma como os arquivos vetoriais são produzidos nos programas CAD pode dificultar a abertura dos mesmos, por exemplo, hachuras, arquivos “atachados”, pontos e pedaços de linha que não fazem parte (“sujam”) do mapa devem ser evitados. Quanto mais o desenho se basear em estruturas como pontos, linhas e polígonos mais facilmente serão reconhecidos e menor a possibilidade de conflitos.
+
+Para visualizar tais arquivos no QGIS temos 3 opções:
+
+I. Utilizar a Barra de Menu Camada > Adicionar camada vetorial;
